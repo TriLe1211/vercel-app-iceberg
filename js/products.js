@@ -1,5 +1,5 @@
-import { products } from './service.js';
-import { filteringProcess } from './service.js';
+import { viProducts, enProducts } from './service.js';
+import { viFilteringProcess, enFilteringProcess } from './service.js';
 
 const productString = `<div class="product">
         <div class="main-content">
@@ -29,25 +29,25 @@ const modalString = `<div class="body">
                     <div class="next"><i class="fas fa-chevron-right"></i></div>
                 </div>
                 <div class="detail right-info">
-                    <h3 class="product-name">ceberg Compact</h3>
-                    <h5 class="title">Thông số kỹ thuật:</h5>
+                    <h3 class="product-name"></h3>
+                    <h5 class="title" data-translate="product-specifications-title">Thông số kỹ thuật:</h5>
                     <div class="specification">
                         <div class="left">
                             <ul>
-                                <li>Trọng lượng: <span class="weight"></span></li>
-                                <li>Kích thước: <span class="size"></span></li>
-                                <li>Cửa: <span class="door"></span></li>
-                                <li>Dung tích bình nước: <span class="capacity"></span></li>
-                                <li>Dung tích bình chứa của khách hàng: <span class="customer-tank-capacity"></span></li>
+                                <li data-translate="weight">Trọng lượng: <span class="weight"></span></li>
+                                <li data-translate="size">Kích thước: <span class="size"></span></li>
+                                <li data-translate="door">Cửa: <span class="door"></span></li>
+                                <li data-translate="capacity">Dung tích bình nước: <span class="capacity"></span></li>
+                                <li data-translate="customer-tank-capacity">Dung tích bình chứa của khách hàng: <span class="customer-tank-capacity"></span></li>
                             </ul>
                         </div>
                         <div class="right">
                             <ul>
-                                <li>Nhiệt độ hoạt động: <span class="operating-temperature"></span></li>
-                                <li>Điện áp: <span class="voltage"></span></li>
-                                <li>Công suất tiêu thụ: <span class="power-consumption"></span></li>
-                                <li>Tốc độ lọc nước: <span class="water-filtration-rate"></span></li>
-                                <li>Tốc độ cấp nước: <span class="water-supply-rate"></span></li>
+                                <li data-translate="operating-temperature">Nhiệt độ hoạt động: <span class="operating-temperature"></span></li>
+                                <li data-translate="voltage">Điện áp: <span class="voltage"></span></li>
+                                <li data-translate="power-consumption">Công suất tiêu thụ: <span class="power-consumption"></span></li>
+                                <li data-translate="water-filtration-rate">Tốc độ lọc nước: <span class="water-filtration-rate"></span></li>
+                                <li data-translate="water-supply-rate">Tốc độ cấp nước: <span class="water-supply-rate"></span></li>
                             </ul>
                         </div>
                     </div>
@@ -55,19 +55,24 @@ const modalString = `<div class="body">
             </div>
 
             <div class="content">
-                    <h2 class="title">Thông tin chi tiết về Sản phẩm</h2>
-                    <h3 class="product-name">ceberg Compact</h3>
-                    <p class="desc">Máy treo tường – Phù hợp cho các tòa nhà và công trình dân dụng</p>
-                    <h5 class="sub-title">Đặc điểm nổi bật:</h5>
+                <h2 class="title" data-translate="product-details-title">Thông tin chi tiết về Sản phẩm</h2>
+                <h3 class="product-name"></h3>
+                <p class="desc"></p>
+                <h5 class="sub-title" data-translate="product-features-title">Đặc điểm nổi bật:</h5>
             </div>
             <div class="process">
-                <h5 class="title">Quy trình 8 bước lọc nước:</h5>
+                <h5 class="title" data-translate="filtering-process-title">Quy trình 8 bước lọc nước:</h5>
                 <ul class="steps"></ul>
             </div>
             <div class="close">
                 <i class="fas fa-times-circle icon-close"></i>
             </div>
         </div>`
+
+
+let currentLang = localStorage.getItem("language") || "vi";
+console.log(currentLang);
+
 
 function setTextContentDesc(parentElement, classDesc, contentArr) {
     const headingElement = parentElement.querySelector(classDesc);
@@ -181,8 +186,9 @@ function renderFilteringProcess(modalElement) {
     const processElement = modalElement.querySelector('.process');
     if(!processElement) return;
     const steps = modalElement.querySelector('.steps');
-    const array = [...filteringProcess];
-    array.forEach(value => {
+    const filteringProcess = currentLang === "vi" ? [...viFilteringProcess] : [...enFilteringProcess];
+    // const array = [...filteringProcess];
+    filteringProcess.forEach(value => {
     const pElement = document.createElement('li');
         pElement.textContent = value;
         steps.appendChild(pElement);
@@ -194,9 +200,16 @@ function createModalElement(product) {
     const divElement = document.createElement('div');
     divElement.innerHTML = modalString;
     const modalElement = divElement.firstElementChild;
+    modalElement.setAttribute('data-product-id', product.id);
+    
+    // Set product name and description
     setTextContent(modalElement, '.product-name', product.productName);
     setTextContent(modalElement, '.desc', product.desc);
-    setImgList(modalElement, '.modal-images', product )
+    
+    // Set images
+    setImgList(modalElement, '.modal-images', product);
+    
+    // Set specifications
     setTextContent(modalElement, '.weight', product.specifications.weight);
     setTextContent(modalElement, '.size', product.specifications.size);
     setTextContent(modalElement, '.door', product.specifications.door);
@@ -207,12 +220,18 @@ function createModalElement(product) {
     setTextContent(modalElement, '.power-consumption', product.specifications.powerConsumption);
     setTextContent(modalElement, '.water-filtration-rate', product.specifications.waterFiltrationRate);
     setTextContent(modalElement, '.water-supply-rate', product.specifications.waterSupplyRate);
+    
+    // Set features
     setTextContentFeature(modalElement, product.feature);
-    eventPrevButton(modalElement,product.images );
-    eventNextButton(modalElement,product.images);
+    
+    // Add event listeners
+    eventPrevButton(modalElement, product.images);
+    eventNextButton(modalElement, product.images);
+    
+    // Render filtering process
     renderFilteringProcess(modalElement);
+    
     return modalElement;
-
 }
 
 
@@ -225,12 +244,11 @@ function triggerShowModal(parentElement, classButton, product) {
     if (!buttonElement) return;
     buttonElement.setAttribute("data-id", product.id);
     buttonElement.addEventListener("click", () => {
-        modalElement.textContent="";
-       const model = createModalElement(product); 
+        modalElement.textContent = "";
+        const model = createModalElement(product);
         modalElement.appendChild(model);
         modalElement.style.display = "block";
     });
-
 }
 
 
@@ -367,11 +385,103 @@ function eventCloseModal() {
    }
 }
 
+// Thêm hàm để cập nhật modal khi ngôn ngữ thay đổi
+function updateModalContent(product) {
+    const modalElement = document.querySelector('.modal .body');
+    if (!modalElement) return;
 
+    // Cập nhật tên và mô tả sản phẩm
+    setTextContent(modalElement, '.product-name', product.productName);
+    setTextContent(modalElement, '.desc', product.desc);
+
+    // Cập nhật các thông số kỹ thuật
+    setTextContent(modalElement, '.weight', product.specifications.weight);
+    setTextContent(modalElement, '.size', product.specifications.size);
+    setTextContent(modalElement, '.door', product.specifications.door);
+    setTextContent(modalElement, '.capacity', product.specifications.capacity);
+    setTextContent(modalElement, '.customer-tank-capacity', product.specifications.customerTankCapacity);
+    setTextContent(modalElement, '.operating-temperature', product.specifications.operatingTemperature);
+    setTextContent(modalElement, '.voltage', product.specifications.voltage);
+    setTextContent(modalElement, '.power-consumption', product.specifications.powerConsumption);
+    setTextContent(modalElement, '.water-filtration-rate', product.specifications.waterFiltrationRate);
+    setTextContent(modalElement, '.water-supply-rate', product.specifications.waterSupplyRate);
+
+    // Cập nhật các tính năng
+    const contentElement = modalElement.querySelector('.content');
+    if (contentElement) {
+        // Xóa các tính năng cũ
+        const oldFeatures = contentElement.querySelectorAll('p');
+        oldFeatures.forEach(feature => feature.remove());
+        
+        // Thêm các tính năng mới
+        product.feature.forEach(feature => {
+            const pElement = document.createElement('p');
+            pElement.innerHTML = feature;
+            contentElement.appendChild(pElement);
+        });
+    }
+
+    // Cập nhật quy trình lọc
+    const processElement = modalElement.querySelector('.process');
+    if (processElement) {
+        const steps = processElement.querySelector('.steps');
+        if (steps) {
+            steps.innerHTML = ''; // Xóa các bước cũ
+            const filteringProcess = currentLang === "vi" ? [...viFilteringProcess] : [...enFilteringProcess];
+            filteringProcess.forEach(value => {
+                const liElement = document.createElement('li');
+                liElement.textContent = value;
+                steps.appendChild(liElement);
+            });
+        }
+    }
+}
+
+// Thêm hàm để render lại danh sách sản phẩm
+function reRenderProducts() {
+    const productListElement = document.getElementById('product-list');
+    if (!productListElement) return;
+    
+    // Xóa danh sách sản phẩm cũ
+    productListElement.innerHTML = '';
+    
+    // Lấy danh sách sản phẩm theo ngôn ngữ hiện tại
+    const productList = currentLang === "vi" ? [...viProducts] : [...enProducts];
+    console.log('Current language:', currentLang);
+    console.log('Product list:', productList);
+    
+    // Render lại danh sách sản phẩm
+    productList.forEach((product, index) => {
+        const productElement = createProductElement(product, index);
+        if (!productElement) return;
+        productListElement.appendChild(productElement);
+    });
+}
+
+// Thêm event listener cho việc thay đổi ngôn ngữ
+document.addEventListener('languageChanged', (event) => {
+    // Cập nhật ngôn ngữ hiện tại
+    currentLang = localStorage.getItem("language") || "vi";
+    console.log('Language changed to:', currentLang);
+    
+    // Cập nhật modal nếu đang mở
+    const modalElement = document.querySelector('.modal');
+    if (modalElement && modalElement.style.display === 'block') {
+        const productId = document.querySelector('.modal .body').getAttribute('data-product-id');
+        const productList = currentLang === "vi" ? [...viProducts] : [...enProducts];
+        const currentProduct = productList.find(p => p.id === parseInt(productId));
+        if (currentProduct) {
+            updateModalContent(currentProduct);
+        }
+    }
+    
+    // Render lại danh sách sản phẩm
+    reRenderProducts();
+});
 
 (() => {
-    const productList = [...products];
-    renderProducts(productList);
+    // Render sản phẩm ban đầu
+    reRenderProducts();
     surfAuto();
     eventListenerForDot();
     eventCloseModal();

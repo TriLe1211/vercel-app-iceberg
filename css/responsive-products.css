@@ -10,12 +10,14 @@
   html {
     font-size: 11px;
   }
+
   .hero {
     height: 65vh;
     margin-top: 13vh;
     padding: 0;
     /* overflow: hidden; */
   }
+
   .hero .body {
     display: flex;
     flex-direction: row;
@@ -23,12 +25,15 @@
     padding: 5vh 0 0 0;
     /* gap: 20px; */
   }
+
   .hero .heading {
     font-size: 2rem;
   }
+
   .hero .content-block {
     padding-left: 50px;
   }
+
   .hero .media-block img {
     height: 50vh;
   }
@@ -39,13 +44,16 @@
   html {
     font-size: 7px;
   }
+
   .hero {
     height: 40vh;
     margin-top: 7vh;
     margin-bottom: 0;
+    display: flex;
+    align-items: center;
   }
-  .hero .body {
-  }
+
+  .hero .body {}
 
   .hero .content-block {
     padding: 0px;
@@ -56,6 +64,10 @@
     width: 80%;
   }
 
+  .hero .heading {
+    font-size: 2.5rem;
+  }
+
   .feedback {
     padding: 10px 0;
   }
@@ -64,6 +76,7 @@
     margin: 0vh;
     height: 60vh;
   }
+
   .feedback-item {
     height: 25vh;
     display: flex;
@@ -71,6 +84,7 @@
     align-items: center;
     text-wrap: wrap;
   }
+
   .feedback-item .content blockquote {
     font-size: 2rem;
     text-align: center;

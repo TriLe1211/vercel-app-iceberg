@@ -1,7 +1,7 @@
-export const products= [
+export const viProducts= [
     {
         id: 1,
-        images: ['img/residence.avif','img/mall.avif', 'img/gymnasium.avif'],
+        images: ['img/b.jpeg','img/as.jpeg', 'img/d.jpeg'],
         productName: 'CEBERG COMPACT',
         desc: 'Máy treo tường – Phù hợp cho các tòa nhà và công trình dân dụng',
         feature: 
@@ -27,7 +27,7 @@ export const products= [
     },
     {
         id: 2,
-        images: ['img/table.avif','img/banner.avif'],
+        images: ['img/ff.jpeg','img/fg.jpeg','img/ff.jpeg'],
         productName: 'CEBERG STANDARD',
         desc: 'Máy dạng đứng – Tích hợp bồn nước 300 lít',
         feature: 
@@ -51,7 +51,60 @@ export const products= [
     },
 ]
 
-export const filteringProcess = [
+export const enProducts= [
+    {
+        id: 1,
+        images: ['img/b.jpeg','img/as.jpeg', 'img/d.jpeg'],
+        productName: 'CEBERG COMPACT',
+        desc: 'Wall-mounted machine - Suitable for buildings and civil works',
+        feature: 
+                ['Operates 24/7 in all weather conditions.<br>', 
+                'Accepts contactless card, QR code and cash payments.<br>',
+                'Backlit interface – easy to use at night.<br>',
+                'Built-in smart camera warning system.<br>',
+                '4-line LED display showing: price per liter, technical support phone number and latest filter replacement date.<br>',
+                'Water is processed and supplied directly (continuously, no storage tank).<br>',
+            ],
+        specifications: {
+            weight: '150 kg', 
+            size: '1550 × 800 × 515 mm',
+            door: 'Polycarbonate 5 mm with handle',
+            capacity:'300l',          
+            customerTankCapacity:'up to 19l',
+            operatingTemperature: '–40°C to +40°C',
+            voltage:'220V / 50Hz',
+            powerConsumption:'100W (standby 10W)',
+            waterFiltrationRate: '1–2 l/min',
+            waterSupplyRate: '12 l/min'
+        }
+    },
+    {
+        id: 2,
+        images: ['img/ff.jpeg','img/fg.jpeg','img/ff.jpeg'],
+        productName: 'CEBERG STANDARD',
+        desc: 'Standing machine - Integrated 300 liter water tank',
+        feature: 
+        ['Outer shell made of AISI 430 stainless steel.<br>',
+        'Filtration and water supply system made of AISI 304 stainless steel (completely corrosion resistant).<br>',
+        'Includes all features of the Compact model.<br>',
+        'Independent operation thanks to integrated water tank.<br>'
+        ],
+        specifications: {
+            weight: '170 kg', 
+            size: '2047 × 800 × 880 mm',
+            door: 'Polycarbonate 5 mm with handle',
+            capacity:'300l',          
+            customerTankCapacity:'up to 19l',
+            operatingTemperature: '–40°C to +40°C',
+            voltage:'220V / 50Hz',
+            powerConsumption:'100W (standby 10W)',
+            waterFiltrationRate: '1–2 l/min',
+            waterSupplyRate: '12 l/min'
+        }
+    },
+]
+
+export const viFilteringProcess = [
    'Màng lọc polypropylene 5 micrômét',
    'Than hoạt tính từ gáo dừa',
    'Màng lọc polypropylene 1 micrômét',
@@ -61,3 +114,13 @@ export const filteringProcess = [
    'Khử trùng bằng tia cực tím (UV)',
    'Khử trùng bình chứa bằng công nghệ Ozone'
 ]
+export const enFilteringProcess = [
+    '5 micron polypropylene filter',
+    'Coconut shell activated carbon',
+    '1 micron polypropylene filter',
+    'Reverse osmosis (RO) membrane',
+    'Mineral supplementation',
+    'Activated carbon fine filtration',
+    'Ultraviolet (UV) sterilization',
+    'Ozone technology tank sterilization'
+ ]

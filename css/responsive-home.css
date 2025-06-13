@@ -160,6 +160,11 @@
     padding: 0px;
   }
 
+  .intro-text,
+  .intro-img {
+    width: 100%;
+  }
+
   .intro-item {
     display: flex;
     flex-direction: column;

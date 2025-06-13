@@ -46,6 +46,41 @@ const enTranslations = {
   'promotion': 'PRODUCT PROMOTION',
   'promotion-text': 'Introduce new drinks, snack and food in Take Box machine',
   'read-more':'Read More',
+
+  // Become a location page
+  'become-a-location-title': 'BECOME A LOCATION AQUABOX',
+  'become-a-location-desc': 'The essence of Take Box is always base on user needs, integrate arious resources from different industries to provide users with quality services. Through innovation, intelligent operation, deep understanding of the market, we provide valuable services to our customers.',
+  'become-a-location-desc-2': 'Take Box commits to help advertisers reach their target accurately',
+  'become-a-location-sub-title': 'CURRENT LOCATIONS',
+  'become-a-location-university': 'UNIVERSITY',
+  'become-a-location-office-building': 'OFFICE BUILDING',
+  'become-a-location-gymnasium':'GYMNASTICS',
+  'become-a-location-hospital':'HOSPITAL',
+  'become-a-location-residential-area':'RESIDENTIAL AREA',
+  'become-a-location-hotel':'HOTEL',
+  'become-a-location-shopping-center':'SHOPPING CENTER',
+  'become-a-location-step-title': 'HOW TO BECOME A LOCATION',
+  'become-a-location-step-number-1': 'STEP 1',
+  'become-a-location-step-1': 'Contact via phone or email',
+  'become-a-location-step-number-2': 'STEP 2',
+  'become-a-location-step-2': 'Arrange a meeting and survey the location with the AquaBox team',
+  'become-a-location-step-number-3': 'STEP 3',
+  'become-a-location-step-3': 'Receive a proposal and offer',
+  'become-a-location-step-number-4': 'STEP 4',
+  'become-a-location-step-4': 'Confirm and cooperate together',
+
+    // Products page
+    'weight': 'Weight',
+    'size': 'Size',
+    'door': 'Door',
+    'capacity': 'Capacity',
+    'customer-tank-capacity': 'Customer tank capacity',
+    'operating-temperature': 'Operating temperature',
+    'voltage': 'Voltage',
+    'power-consumption': 'Power consumption',
+    'water-filtration-rate': 'Water filtration rate',
+    'water-supply-rate': 'Water supply rate',
+
   // Footer
   'follow_us': 'Follow Us',
   'privacy_policy': 'Privacy Policy',
@@ -53,6 +88,12 @@ const enTranslations = {
   'address':'64 Vo Thi Sau, Tan Dinh Ward, District 1, Ho Chi Minh City ',
   'phone':'+84 368 073 966',
   'email':'vniceberg@gmail.com',
+
+  // Product details translations
+  'product-details-title': 'Product Information',
+  'product-specifications-title': 'Technical Specifications',
+  'product-features-title': 'Key Features',
+  'filtering-process-title': '8-Step Water Filtration Process',
 }; 
 
 const viTranslations = {
@@ -104,6 +145,41 @@ const viTranslations = {
    'promotion-text': 'Giới thiệu đồ ăn thức uống mới thông qua Take box.',
    'read-more':'Đọc thêm',
 
+   // Become a location page
+  'become-a-location-title': 'TRỞ THÀNH ĐỊA ĐIỂM AQUABOX',
+  'become-a-location-desc': 'Máy bán hàng take box phục vụ đa dạng các địa điểm tại Việt Nam thông qua cung cấp đầy đủ dịch vụ. Nghĩa là lắp đặt máy bán hàng tự động, thêm sản phẩm vào máy, bảo trì bảo dưỡng miễn phí.',
+  'become-a-location-desc-2': 'Máy bán hàng Take box phát triển mạnh để cung cấp dịch vụ tốt nhất và đáng tin tưởng nhất đến khách hàng và chúng tôi đánh giá cao sự quan tâm của bạn về Take Box.',
+  'become-a-location-sub-title': 'CÁC ĐỊA ĐIỂM CHÚNG TÔI HIỆN TẠI ĐANG CUNG CẤP DỊCH VỤ',
+  'become-a-location-university': 'TRƯỜNG ĐẠI HỌC & TRƯỜNG HỌC',
+  'become-a-location-office-building': 'TÒA NHÀ VĂN PHÒNG',
+  'become-a-location-gymnasium':'KHU THỂ THAO',
+  'become-a-location-hospital':'BỆNH VIỆN',
+  'become-a-location-residential-area':'KHU DÂN CƯ',
+  'become-a-location-hotel':'KHÁCH SẠN',
+  'become-a-location-shopping-center':'TRUNG TÂM THƯƠNG MẠI',
+  'become-a-location-step-title': 'LÀM SAO ĐỂ ĐĂNG KÝ ĐẶT MÁY',
+  'become-a-location-step-number-1': 'BƯỚC 1',
+  'become-a-location-step-1': 'Liên hệ qua điện thoại hoặc email',
+  'become-a-location-step-number-2': 'BƯỚC 2',
+  'become-a-location-step-2': 'Sắp xếp cuộc gặp và và khảo sát địa điểm cùng đội AquaBox',
+  'become-a-location-step-number-3': 'BƯỚC 3',
+  'become-a-location-step-3': 'Nhận lời đề nghị và đề xuất',
+  'become-a-location-step-number-4': 'BƯỚC 4',
+  'become-a-location-step-4': 'Xác nhận và hợp tác cùng nhau',
+
+
+  // Products page
+  'weight': 'Trọng lượng',
+  'size': 'Kích thước',
+  'door': 'Cửa',
+  'capacity': 'Dung tích bình nước',
+  'customer-tank-capacity': 'Dung tích bình chứa của khách hàng',
+  'operating-temperature': 'Nhiệt độ hoạt động',
+  'voltage': 'Điện áp',
+  'power-consumption': 'Công suất tiêu thụ',
+  'water-filtration-rate': 'Tốc độ lọc nước',
+  'water-supply-rate': 'Tốc độ cấp nước',
+
   // Footer
   'follow_us': 'Theo dõi chúng tôi',
   'privacy_policy': 'Chính sách bảo mật',
@@ -111,6 +187,12 @@ const viTranslations = {
   'address':'64 Võ Thị Sáu, Phường Tân Định, Quận 1, Thành phố Hồ Chí Minh ',
   'phone':'+84 368 073 966',
   'email':'vniceberg@gmail.com',
+
+  // Product details translations
+  'product-details-title': 'Thông tin chi tiết về Sản phẩm',
+  'product-specifications-title': 'Thông số kỹ thuật',
+  'product-features-title': 'Đặc điểm nổi bật',
+  'filtering-process-title': 'Quy trình 8 bước lọc nước',
 }; 
 
 // Lấy ngôn ngữ từ localStorage hoặc mặc định là 'vi'
@@ -118,10 +200,16 @@ let currentLang = localStorage.getItem("language") || "vi";
 
 // Hàm chuyển đổi ngôn ngữ
 function changeLanguage(lang) {
-  currentLang = lang;
-  localStorage.setItem("language", lang);
-  updateContent();
-  updateLanguageButton();
+    console.log('Changing language to:', lang);
+    currentLang = lang;
+    localStorage.setItem("language", lang);
+    updateContent();
+    updateLanguageButton();
+    
+    // Phát ra sự kiện khi ngôn ngữ thay đổi
+    const event = new Event('languageChanged');
+    document.dispatchEvent(event);
+    console.log('Language change event dispatched');
 }
 
 // Hàm cập nhật nội dung theo ngôn ngữ
@@ -290,3 +378,4 @@ document.addEventListener('DOMContentLoaded', function() {
     animationObserver.observe(element);
   });
 });
+
