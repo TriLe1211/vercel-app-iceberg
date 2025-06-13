@@ -70,16 +70,16 @@ const enTranslations = {
   'become-a-location-step-4': 'Confirm and cooperate together',
 
     // Products page
-    'weight': 'Weight',
-    'size': 'Size',
-    'door': 'Door',
-    'capacity': 'Capacity',
-    'customer-tank-capacity': 'Customer tank capacity',
-    'operating-temperature': 'Operating temperature',
-    'voltage': 'Voltage',
-    'power-consumption': 'Power consumption',
-    'water-filtration-rate': 'Water filtration rate',
-    'water-supply-rate': 'Water supply rate',
+    'weight': 'Weight: ',
+    'size': 'Size: ',
+    'door': 'Door: ',
+    'capacity': 'Capacity: ',
+    'customer-tank-capacity': 'Customer tank capacity: ',
+    'operating-temperature': 'Operating temperature: ',
+    'voltage': 'Voltage: ',
+    'power-consumption': 'Power consumption: ',
+    'water-filtration-rate': 'Water filtration rate: ',
+    'water-supply-rate': 'Water supply rate: ',
 
   // Footer
   'follow_us': 'Follow Us',
@@ -169,16 +169,16 @@ const viTranslations = {
 
 
   // Products page
-  'weight': 'Trọng lượng',
-  'size': 'Kích thước',
-  'door': 'Cửa',
-  'capacity': 'Dung tích bình nước',
-  'customer-tank-capacity': 'Dung tích bình chứa của khách hàng',
-  'operating-temperature': 'Nhiệt độ hoạt động',
-  'voltage': 'Điện áp',
-  'power-consumption': 'Công suất tiêu thụ',
-  'water-filtration-rate': 'Tốc độ lọc nước',
-  'water-supply-rate': 'Tốc độ cấp nước',
+  'weight': 'Trọng lượng:',
+  'size': 'Kích thước:',
+  'door': 'Cửa:',
+  'capacity': 'Dung tích bình nước: ',
+  'customer-tank-capacity': 'Dung tích bình chứa của khách hàng: ',
+  'operating-temperature': 'Nhiệt độ hoạt động: ',
+  'voltage': 'Điện áp: ',
+  'power-consumption': 'Công suất tiêu thụ: ',
+  'water-filtration-rate': 'Tốc độ lọc nước: ',
+  'water-supply-rate': 'Tốc độ cấp nước: ',
 
   // Footer
   'follow_us': 'Theo dõi chúng tôi',

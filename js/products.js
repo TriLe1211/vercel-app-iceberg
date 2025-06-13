@@ -34,20 +34,20 @@ const modalString = `<div class="body">
                     <div class="specification">
                         <div class="left">
                             <ul>
-                                <li data-translate="weight">Trọng lượng: <span class="weight"></span></li>
-                                <li data-translate="size">Kích thước: <span class="size"></span></li>
-                                <li data-translate="door">Cửa: <span class="door"></span></li>
-                                <li data-translate="capacity">Dung tích bình nước: <span class="capacity"></span></li>
-                                <li data-translate="customer-tank-capacity">Dung tích bình chứa của khách hàng: <span class="customer-tank-capacity"></span></li>
+                                <li><span data-translate="weight">Trọng lượng:</span><span class="weight"></span></li>
+                                <li><span data-translate="size"> Kích thước:</span><span class="size"></span> </li>
+                                <li><span data-translate="door">Cửa:</span><span class="door"></span></li>
+                                <li><span data-translate="capacity">Dung tích bình nước: </span><span class="capacity"></span></li>
+                                <li><span data-translate="customer-tank-capacity">Dung tích bình chứa của khách hàng:</span><span class="customer-tank-capacity"></span></li>
                             </ul>
                         </div>
                         <div class="right">
                             <ul>
-                                <li data-translate="operating-temperature">Nhiệt độ hoạt động: <span class="operating-temperature"></span></li>
-                                <li data-translate="voltage">Điện áp: <span class="voltage"></span></li>
-                                <li data-translate="power-consumption">Công suất tiêu thụ: <span class="power-consumption"></span></li>
-                                <li data-translate="water-filtration-rate">Tốc độ lọc nước: <span class="water-filtration-rate"></span></li>
-                                <li data-translate="water-supply-rate">Tốc độ cấp nước: <span class="water-supply-rate"></span></li>
+                                <li><span data-translate="operating-temperature">Nhiệt độ hoạt động: </span><span class="operating-temperature"></span></li>
+                                <li><span data-translate="voltage">Điện áp: </span><span class="voltage"></span></li>
+                                <li><span data-translate="power-consumption">Công suất tiêu thụ: </span><span class="power-consumption"></span></li>
+                                <li><span data-translate="water-filtration-rate">Tốc độ lọc nước: </span><span class="water-filtration-rate"></span></li>
+                                <li><span data-translate="water-supply-rate">Tốc độ cấp nước: </span><span class="water-supply-rate"></span></li>
                             </ul>
                         </div>
                     </div>
@@ -200,6 +200,24 @@ function createModalElement(product) {
     const divElement = document.createElement('div');
     divElement.innerHTML = modalString;
     const modalElement = divElement.firstElementChild;
+    // --------------------
+     const translations = currentLang === "vi" ? viTranslations : enTranslations;
+
+  modalElement.querySelectorAll("[data-translate]").forEach((element) => {
+    const key = element.getAttribute("data-translate");
+    if (translations[key]) {
+      element.textContent = translations[key];
+    }
+  });
+
+
+
+
+
+    // ------------
+
+
+
     modalElement.setAttribute('data-product-id', product.id);
     
     // Set product name and description
@@ -465,15 +483,15 @@ document.addEventListener('languageChanged', (event) => {
     console.log('Language changed to:', currentLang);
     
     // Cập nhật modal nếu đang mở
-    const modalElement = document.querySelector('.modal');
-    if (modalElement && modalElement.style.display === 'block') {
-        const productId = document.querySelector('.modal .body').getAttribute('data-product-id');
-        const productList = currentLang === "vi" ? [...viProducts] : [...enProducts];
-        const currentProduct = productList.find(p => p.id === parseInt(productId));
-        if (currentProduct) {
-            updateModalContent(currentProduct);
-        }
-    }
+    // const modalElement = document.querySelector('.modal');
+    // if (modalElement && modalElement.style.display === 'block') {
+    //     const productId = document.querySelector('.modal .body').getAttribute('data-product-id');
+    //     const productList = currentLang === "vi" ? [...viProducts] : [...enProducts];
+    //     const currentProduct = productList.find(p => p.id === parseInt(productId));
+    //     if (currentProduct) {
+    //         updateModalContent(currentProduct);
+    //     }
+    // }
     
     // Render lại danh sách sản phẩm
     reRenderProducts();
@@ -481,8 +499,9 @@ document.addEventListener('languageChanged', (event) => {
 
 (() => {
     // Render sản phẩm ban đầu
-    reRenderProducts();
     surfAuto();
     eventListenerForDot();
     eventCloseModal();
+    reRenderProducts();
+
 })();
