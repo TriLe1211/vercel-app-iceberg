@@ -211,7 +211,7 @@ async function includeHTML(elementId, path) {
 // Load navbar and footer
 document.addEventListener('DOMContentLoaded', function() {
     // Load navbar
-    fetch('../pages/navbar.html')
+    fetch('pages/navbar.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => console.error('Error loading navbar:', error));
 
     // Load footer
-    fetch('../pages/footer.html')
+    fetch('pages/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer-container').innerHTML = data;

@@ -1,7 +1,7 @@
 export const products= [
     {
         id: 1,
-        images: ['../img/residence.avif','../img/mall.avif', '../img/gymnasium.avif'],
+        images: ['img/residence.avif','img/mall.avif', 'img/gymnasium.avif'],
         productName: 'CEBERG COMPACT',
         desc: 'Máy treo tường – Phù hợp cho các tòa nhà và công trình dân dụng',
         feature: 
@@ -27,7 +27,7 @@ export const products= [
     },
     {
         id: 2,
-        images: ['../img/table.avif','../img/banner.avif'],
+        images: ['img/table.avif','img/banner.avif'],
         productName: 'CEBERG STANDARD',
         desc: 'Máy dạng đứng – Tích hợp bồn nước 300 lít',
         feature: 
