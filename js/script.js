@@ -12,7 +12,7 @@ const enTranslations = {
   'features-detail-1': 'Multi-stage water filtration (RO, carbon, UV)',
   'features-detail-2': 'Smart monitoring system (real-time control and diagnostics)',
   'features-detail-3': 'Easy-to-use interface with cash and cashless payment options',
-  // 'features-detail-4': 'User-friendly interface',
+  'features-detail-4': 'The entire installation and maintenance process is performed by the professional team of ICEBERG VN, according to strict internal quality standards.',
   // 'features-detail-5': 'Support multiple payment methods',
   // 'features-detail-6': 'Detailed revenue reports',
   'partners-title': 'Our Partners',
@@ -43,7 +43,7 @@ const enTranslations = {
   'advertisment-text': 'Take Box commits to help advertisers reach their target accurately',
   'lease-and-franchise':'LEASE & FRANCHISE',
   'lease-and-franchise-text':'Become a Take Box partners and develop the new generation of business',
-  'promotion': 'PRODUCT PROMOTION',
+  'promotion': 'OUR CERTIFICATES',
   'promotion-text': 'Introduce new drinks, snack and food in Take Box machine',
   'read-more':'Read More',
 
@@ -144,7 +144,7 @@ const viTranslations = {
    'advertisment-text': 'Take box cam kết hỗ trợ đối tác tiếp cận được mục tiêu đối tượng chính xác.',
    'lease-and-franchise':'THUÊ VÀ NHƯỢNG QUYỀN',
    'lease-and-franchise-text':'Trở thành đối tác của Take Box và phát triển một lối kinh doanh mới',
-   'promotion': 'XÚC TIẾN SẢN PHẨM',
+   'promotion': 'CHỨNG NHẬN CỦA CHÚNG TÔI',
    'promotion-text': 'Giới thiệu đồ ăn thức uống mới thông qua Take box.',
    'read-more':'Đọc thêm',
 
