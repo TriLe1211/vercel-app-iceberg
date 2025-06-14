@@ -29,7 +29,7 @@ const enTranslations = {
   'w3':'Provide clean drinking water at a reasonable price.',
   'commitment':'OUR COMMITMENT',
   'commitment-1':'All AQUABOX devices are developed, manufactured, and maintained by ICEBERG company.',
-  'process-title':'INSTALLATION PROCESS',
+  'process-title':'ALL INSTALLATION PROCESS',
   'p1':'INSTALLATION',
   'p2':'TECHNICAL MAINTENANCE',
   'p3':'REPLACE FILTER',
@@ -70,6 +70,9 @@ const enTranslations = {
   'become-a-location-step-4': 'Confirm and cooperate together',
 
     // Products page
+    'products-heading': 'CEBERG',
+    'products-desc1': 'Cleanse Purely, Calm Health',
+    'products-desc2': 'Enhance health with mineral-rich filtered water - Protect your family every day',
     'weight': 'Weight: ',
     'size': 'Size: ',
     'door': 'Door: ',
@@ -127,7 +130,7 @@ const viTranslations = {
   'w3':'Cung cấp nước uống sạch với giá hợp lý.',
   'commitment':'CHÚNG TÔI CAM KẾT',
   'commitment-1':'Tất cả các thiết bị AQUABOX đều được phát triển, sản xuất và bảo trì bởi công ty ICEBERG.',
-  'process-title':'QUY TRÌNH LẮP ĐẶT',
+  'process-title':'TOÀN BỘ QUY TRÌNH LẮP ĐẶT',
   'p1':'LẮP ĐẶT',
   'p2':'BẢO TRÌ KĨ THUẬT',
   'p3':'THAY LÕI LỌC',
@@ -169,6 +172,9 @@ const viTranslations = {
 
 
   // Products page
+  'products-heading': 'CEBERG ',
+  'products-desc1':'Lọc Sạch Tinh Khiết, An Tâm Sức Khỏe',
+  'products-desc2': 'Tăng cường sức khỏe nhờ nguồn nước lọc bổ sung khoáng chất - Bảo vệ cả gia đình bạn mỗi ngày',
   'weight': 'Trọng lượng:',
   'size': 'Kích thước:',
   'door': 'Cửa:',
