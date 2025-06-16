@@ -70,7 +70,7 @@ const enTranslations = {
   'become-a-location-step-4': 'Confirm and cooperate together',
 
     // Products page
-    'products-heading': 'CEBERG',
+    'products-heading': 'ICEBERG',
     'products-desc1': 'Cleanse Purely, Calm Health',
     'products-desc2': 'Enhance health with mineral-rich filtered water - Protect your family every day',
     'weight': 'Weight: ',
@@ -172,7 +172,7 @@ const viTranslations = {
 
 
   // Products page
-  'products-heading': 'CEBERG ',
+  'products-heading': 'ICEBERG ',
   'products-desc1':'Lọc Sạch Tinh Khiết, An Tâm Sức Khỏe',
   'products-desc2': 'Tăng cường sức khỏe nhờ nguồn nước lọc bổ sung khoáng chất - Bảo vệ cả gia đình bạn mỗi ngày',
   'weight': 'Trọng lượng:',

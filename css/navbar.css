@@ -42,7 +42,7 @@ body {
 }
 
 .navbar-brand img {
-  max-height: 80px;
+  max-height: 150px;
   width: auto;
 }
 
@@ -99,8 +99,8 @@ body {
 /* Mobile */
 @media screen and (max-width: 767.98px) {
   .logo-img {
-    width: 40px;
-    height: 40px;
+    width: auto;
+    height: 48px;
   }
 
   .navbar {

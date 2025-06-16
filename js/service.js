@@ -2,7 +2,7 @@ export const viProducts= [
     {
         id: 1,
         images: ['img/b.jpeg','img/as.jpeg', 'img/d.jpeg'],
-        productName: 'CEBERG COMPACT',
+        productName: 'ICEBERG COMPACT',
         desc: 'Máy treo tường – Phù hợp cho các tòa nhà và công trình dân dụng',
         feature: 
                 ['Hoạt động 24/7 mọi điều kiện thời tiết.<br>', 
@@ -28,7 +28,7 @@ export const viProducts= [
     {
         id: 2,
         images: ['img/ff.jpeg','img/fg.jpeg','img/ff.jpeg'],
-        productName: 'CEBERG STANDARD',
+        productName: 'ICEBERG STANDARD',
         desc: 'Máy dạng đứng – Tích hợp bồn nước 300 lít',
         feature: 
         ['Vỏ ngoài bằng thép không gỉ AISI 430.<br>',
