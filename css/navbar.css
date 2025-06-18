@@ -41,8 +41,13 @@ body {
   align-items: center;
 }
 
+.navbar-brand a {
+  width: 15vw;
+}
+
 .navbar-brand img {
-  max-height: 150px;
+  /* max-height: 150px; */
+  height: 100%;
   width: auto;
 }
 
@@ -74,7 +79,6 @@ body {
   opacity: 0;
 }
 
-
 .button-outline-primary {
   width: 200px !important;
   height: 50px !important;
@@ -88,7 +92,6 @@ body {
   justify-content: center !important;
   text-decoration: none !important;
 }
-
 
 .dropdown {
   display: flex;
@@ -156,7 +159,6 @@ body {
 .dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
-
 }
 
 .dropdown .dropdown-item {

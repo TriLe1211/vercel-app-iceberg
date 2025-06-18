@@ -7,6 +7,13 @@ body {
   overflow-x: hidden;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 5);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* Hero */
 .hero {
   padding: 80px 0;

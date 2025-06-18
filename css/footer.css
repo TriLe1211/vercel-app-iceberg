@@ -25,6 +25,14 @@
   margin-top: 1.2rem;
 }
 
+.logo {
+  width: 15vh;
+  text-align: end;
+}
+
+.logo img {
+  width: 100%;
+}
 /* ---------------------------------------------------- */
 
 @media screen and (min-width: 992px) {

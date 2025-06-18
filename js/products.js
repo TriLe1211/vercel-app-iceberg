@@ -10,7 +10,7 @@ const productString = `<div class="product">
                 </div>
                 <div class="content">
                     <h2 class="heading"></h2>
-                    <p class="desc"></p>
+                    <p class="desc line-clamp"></p>
                     <button class="btn btn-primary">Chi tiết</button>
                 </div>
             </div>
