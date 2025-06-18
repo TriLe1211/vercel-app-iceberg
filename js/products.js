@@ -273,6 +273,12 @@ function createProductElement(product, index) {
     setUrlImg(productElement, '.product-img-1', product.images[0], index);
     setTextContent(productElement, '.heading', product.productName);
     setTextContentDesc(productElement, '.desc', product.feature);
+    const currentLang = localStorage.getItem("language") || "vi";
+    if (currentLang === "vi") {
+    setTextContent(productElement, '.btn', "Chi tiết");
+    } else {
+    setTextContent(productElement, '.btn', "Detail");
+    }
     triggerShowModal(productElement, '.btn', product);
     return productElement;
 }
