@@ -78,6 +78,10 @@
     height: 60vh;
   }
 
+  .product-list {
+    margin-top: 20px;
+  }
+
   .feedback-item {
     height: 25vh;
     display: flex;
