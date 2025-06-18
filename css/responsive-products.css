@@ -53,7 +53,8 @@
     align-items: center;
   }
 
-  .hero .body {}
+  .hero .body {
+  }
 
   .hero .content-block {
     padding: 0px;
@@ -83,6 +84,8 @@
     flex-direction: row;
     align-items: center;
     text-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
   }
 
   .feedback-item .content blockquote {
@@ -105,6 +108,18 @@
     width: 40%;
   }
 
+  .feedback-item .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 0;
+  }
+
+  .feedback-item .info {
+    margin-left: 0px;
+  }
+
   .feedback-item .info .title {
     margin: 5px 0 0 0;
   }
@@ -115,6 +130,7 @@
 
   .product .images {
     width: 100%;
+    height: 30vh;
   }
 
   .product .body {
@@ -138,7 +154,7 @@
   }
 
   .product .images img {
-    height: 25vh;
+    /* height: 25vh; */
     width: 100%;
   }
 

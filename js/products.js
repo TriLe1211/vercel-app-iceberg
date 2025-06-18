@@ -210,14 +210,6 @@ function createModalElement(product) {
     }
   });
 
-
-
-
-
-    // ------------
-
-
-
     modalElement.setAttribute('data-product-id', product.id);
     
     // Set product name and description
@@ -317,7 +309,7 @@ function surfAuto() {
     if (!dotListElement) {
         return;
     }
-    let intervalId = setInterval(function() {
+     setInterval(function() {
         const feedbackParentElement = document.querySelector('.feedback-list');
         if(feedbackParentElement.getAttribute("data-direction") === 'ltr'){
 
@@ -340,16 +332,17 @@ function surfAuto() {
             }
         }
         
-      }, 4500);
+      }, 6000);
 
 }
 
 
 function surfFeedBack(classElement, i) {
     const feedbacksElement = document.querySelector(classElement);
-    if (!feedbacksElement) return;
+    let parentElement = feedbacksElement.parentElement;  
+    if (!parentElement) return;
     
-    const width = feedbacksElement.getBoundingClientRect().width;
+    const width = parentElement.getBoundingClientRect().width;
     
     if(i > 0) {
         feedbacksElement.style.transform = 'translateX(-' + i * width + 'px)';
@@ -480,19 +473,7 @@ function reRenderProducts() {
 document.addEventListener('languageChanged', (event) => {
     // Cập nhật ngôn ngữ hiện tại
     currentLang = localStorage.getItem("language") || "vi";
-    console.log('Language changed to:', currentLang);
-    
-    // Cập nhật modal nếu đang mở
-    // const modalElement = document.querySelector('.modal');
-    // if (modalElement && modalElement.style.display === 'block') {
-    //     const productId = document.querySelector('.modal .body').getAttribute('data-product-id');
-    //     const productList = currentLang === "vi" ? [...viProducts] : [...enProducts];
-    //     const currentProduct = productList.find(p => p.id === parseInt(productId));
-    //     if (currentProduct) {
-    //         updateModalContent(currentProduct);
-    //     }
-    // }
-    
+    console.log('Language changed to:', currentLang);  
     // Render lại danh sách sản phẩm
     reRenderProducts();
 });
