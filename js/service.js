@@ -55,7 +55,7 @@ export const enProducts= [
     {
         id: 1,
         images: ['img/b.jpeg','img/as.jpeg', 'img/d.jpeg'],
-        productName: 'CEBERG COMPACT',
+        productName: 'ICEBERG COMPACT',
         desc: 'Wall-mounted machine - Suitable for buildings and civil works',
         feature: 
                 ['Operates 24/7 in all weather conditions.<br>', 
@@ -81,7 +81,7 @@ export const enProducts= [
     {
         id: 2,
         images: ['img/ff.jpeg','img/fg.jpeg','img/ff.jpeg'],
-        productName: 'CEBERG STANDARD',
+        productName: 'ICEBERG STANDARD',
         desc: 'Standing machine - Integrated 300 liter water tank',
         feature: 
         ['Outer shell made of AISI 430 stainless steel.<br>',
