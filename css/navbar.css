@@ -42,13 +42,16 @@ body {
 }
 
 .navbar-brand a {
-  width: 15vw;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar-brand img {
   /* max-height: 150px; */
+  object-fit: fill;
   height: 100%;
   width: auto;
+  /* padding: 2rem; */
 }
 
 .navbar-nav {
