@@ -49,8 +49,8 @@ const enTranslations = {
 
   // Become a location page
   'become-a-location-title': 'BECOME A LOCATION AQUABOX',
-  'become-a-location-desc': 'The essence of Take Box is always base on user needs, integrate arious resources from different industries to provide users with quality services. Through innovation, intelligent operation, deep understanding of the market, we provide valuable services to our customers.',
-  'become-a-location-desc-2': 'Take Box commits to help advertisers reach their target accurately',
+  'become-a-location-desc': 'The Aquabox machine serves a variety of locations in Vietnam by providing complete services. This means installing the Aquabox machine, replacing the filter cartridge, and free maintenance services.',
+  'become-a-location-desc-2': 'Aquabox is developing strongly to provide the best and most reliable service to customers, and we appreciate your interest in Aquabox.',
   'become-a-location-sub-title': 'CURRENT LOCATIONS',
   'become-a-location-university': 'UNIVERSITY',
   'become-a-location-office-building': 'OFFICE BUILDING',
@@ -150,8 +150,8 @@ const viTranslations = {
 
    // Become a location page
   'become-a-location-title': 'TRỞ THÀNH ĐỊA ĐIỂM AQUABOX',
-  'become-a-location-desc': 'Máy bán hàng take box phục vụ đa dạng các địa điểm tại Việt Nam thông qua cung cấp đầy đủ dịch vụ. Nghĩa là lắp đặt máy bán hàng tự động, thêm sản phẩm vào máy, bảo trì bảo dưỡng miễn phí.',
-  'become-a-location-desc-2': 'Máy bán hàng Take box phát triển mạnh để cung cấp dịch vụ tốt nhất và đáng tin tưởng nhất đến khách hàng và chúng tôi đánh giá cao sự quan tâm của bạn về Take Box.',
+  'become-a-location-desc': 'Máy Aquabox phục vụ đa dạng các địa điểm tại Việt Nam thông qua cung cấp đầy đủ dịch vụ. Nghĩa là lắp đặt máy Aquabox, thay lõi lọc, bảo trì bảo dưỡng miễn phí.',
+  'become-a-location-desc-2': 'Máy Aquabox phát triển mạnh để cung cấp dịch vụ tốt nhất và đáng tin tưởng nhất đến khách hàng và chúng tôi đánh giá cao sự quan tâm của bạn về Aquabox.',
   'become-a-location-sub-title': 'CÁC ĐỊA ĐIỂM CHÚNG TÔI HIỆN TẠI ĐANG CUNG CẤP DỊCH VỤ',
   'become-a-location-university': 'TRƯỜNG ĐẠI HỌC & TRƯỜNG HỌC',
   'become-a-location-office-building': 'TÒA NHÀ VĂN PHÒNG',
